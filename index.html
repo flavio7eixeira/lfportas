@@ -156,40 +156,40 @@
         <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate>
+           <form action="https://formspree.io/flavio.augustot@gmail.com" method="post" name="sentMessage" id="contactForm" novalidate>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Nome</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Name" required data-validation-required-message="Informe seu nome.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Email</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" name="email"  type="email" placeholder="Endereço de e-mail" required data-validation-required-message="Informe seu e-mail.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Telefone</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" name="fone"  type="text" placeholder="Informe seu telefone" required data-validation-required-message="informe seu telefone.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls">
                   <label>Escreva sua mensagem</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" id="message" name="message"  rows="1" placeholder="Escreva sua mensagem" required data-validation-required-message="Escreva sua mensagem."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <br>
               <div id="success"></div>
               <div class="form-group">
+                <input type="hidden" name="_next" value="http://flavioedaiane.com.br/index.html?suc=1" />
+                <input type="hidden" name="_language" value="pt" />
                 <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
               </div>
             </form>
@@ -197,6 +197,21 @@
         </div>
       </div>
     </section>
+
+    <!-- About MAP -->
+    <section class="success" id="about">
+      <div class="container">
+        <h2 class="text-center">Sobre nós</h2>
+        <hr class="star-light">
+      
+          <div>
+
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.4447609029417!2d-46.76515894903477!3d-23.516500584630183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff27527b8931%3A0x3297600c6712e5fe!2sR.+Sebasti%C3%A3o+Pic%C3%A3o%2C+Osasco+-+SP%2C+Brasil!5e0!3m2!1spt-BR!2sar!4v1517245936303" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+      </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="text-center">
